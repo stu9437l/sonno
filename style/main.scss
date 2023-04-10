@@ -850,30 +850,13 @@ section {
           }
           &:not(.collapsed) {
             &::after {
-              background: url(https://cdn.shopify.com/s/files/1/0539/7695/7109/files/minus-square.png?v=1658404280),
+              background: url(https://cdn.shopify.com/s/files/1/0539/7695/7109/files/add-square.png?v=1658404280),
                 radial-gradient(
                   113.33% 113.33% at 0% 0%,
                   #4b80ac 0%,
                   #14324b 75.77%
                 );
-              background-repeat: no-repeat;
               background-position: center;
-              content: "";
-              text-align: center;
-              transition: all 0.35s;
-              font-size: 26px;
-              font-weight: 100;
-              border-radius: 50%;
-              width: 30px;
-              height: 30px;
-              color: #fff;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              position: absolute;
-              right: 0;
-              top: 50%;
-              transform: translateY(-50%);
             }
           }
         }
