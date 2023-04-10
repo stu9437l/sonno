@@ -1138,4 +1138,28 @@ footer .bottom__footer {
   padding: 17px 0;
   color: #fff;
   font-size: 14px;
+}
+footer .footerClientReviews__slider .slick-list {
+  padding: 5px;
+}
+footer .footerClientReviews__slider .slick-arrow {
+  z-index: 99;
+  transition: 0.2s ease-in-out;
+}
+footer .footerClientReviews__slider .slick-arrow.slick-next::before {
+  content: "\f054";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+footer .footerClientReviews__slider .slick-arrow.slick-prev::before {
+  content: "\f053";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+footer .footerClientReviews__slider .slick-arrow::before {
+  color: #d8d8d8;
+  font-size: 25px;
+}
+footer .footerClientReviews__slider .slick-arrow:hover {
+  transform: translate(0, -50%) scale(1.1);
 }/*# sourceMappingURL=main.css.map */

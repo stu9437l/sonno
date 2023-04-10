@@ -37,7 +37,7 @@ $(".bestSellers__slider").slick({
 
 $(".clientsReview__slider").slick({
   dots: false,
-  arrows:true,
+  arrows: true,
   infinite: false,
   speed: 300,
   slidesToShow: 4,
@@ -70,4 +70,13 @@ $(".clientsReview__slider").slick({
     // settings: "unslick"
     // instead of a settings object
   ],
+});
+
+$(".footerClientReviews__slider").slick({
+  dots: false,
+  arrows: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 1,
 });
