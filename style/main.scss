@@ -750,6 +750,46 @@ section {
         }
       }
     }
+    .clientsReview__slider {
+      .slick-list {
+        padding: 20px 0;
+      }
+      &.slider__gap {
+        .review__card {
+          margin: 0 10px;
+        }
+      }
+      .slick-arrow {
+        z-index: 99;
+        transition: 0.2s ease-in-out;
+        &.slick-next {
+          &::before {
+            content: "\f054";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+          }
+        }
+        &.slick-prev {
+          &::before {
+            content: "\f053";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+          }
+        }
+        &::before {
+          color: #d8d8d8;
+          font-size: 25px;
+        }
+        &.slick-disabled {
+          &::before {
+            opacity: 0;
+          }
+        }
+        &:hover {
+          transform: translate(0, -50%) scale(1.1);
+        }
+      }
+    }
   }
 }
 
