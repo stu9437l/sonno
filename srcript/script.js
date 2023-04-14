@@ -226,17 +226,16 @@ $(".people__might__like__product__slider").slick({
 // mobile submenu click to menu
 $(".back__to__menu").each(function () {
   $(this).click(function () {
-    console.log("hello");
-    $(this).closest(".vertical__dropdownMenu").animate({
-      width: 0,
-    });
+    $(this).closest(".vertical__dropdownMenu").removeClass("open");
   });
 });
 
 $(".open__submenu").each(function () {
   $(this).click(function () {
-    $(this).closest(".nav__dropdown").find(".vertical__dropdownMenu").animate({
-      width: 260,
-    });
+    console.log("hello");
+    $(this)
+      .closest(".nav__dropdown")
+      .find(".vertical__dropdownMenu")
+      .addClass("open");
   });
 });

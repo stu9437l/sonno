@@ -165,17 +165,21 @@
           }
         }
         .nav__dropdown {
-          overflow: hidden;
           .vertical__dropdownMenu {
             list-style: none;
             position: absolute;
             height: 100vh;
             background-color: white;
             top: 0;
-            width: 0;
             padding: 0;
             margin: 0;
+            left: -260px;
+            width: 100%;
             overflow: hidden;
+            transition: transform 0.3s;
+            &.open {
+              transform: translate(260px, 0);
+            }
           }
         }
       }

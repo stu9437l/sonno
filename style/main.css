@@ -658,19 +658,21 @@ body {
   font-size: 12px;
   margin-top: 3px;
 }
-.offcanvas .offcanvas-body .navLinks__list li .nav__dropdown {
-  overflow: hidden;
-}
 .offcanvas .offcanvas-body .navLinks__list li .nav__dropdown .vertical__dropdownMenu {
   list-style: none;
   position: absolute;
   height: 100vh;
   background-color: white;
   top: 0;
-  width: 0;
   padding: 0;
   margin: 0;
+  left: -260px;
+  width: 100%;
   overflow: hidden;
+  transition: transform 0.3s;
+}
+.offcanvas .offcanvas-body .navLinks__list li .nav__dropdown .vertical__dropdownMenu.open {
+  transform: translate(260px, 0);
 }
 
 #mobile__popup__wrapper {
