@@ -95,6 +95,29 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 
+.button__solid {
+  height: 44px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  border-radius: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.button__solid.button__blue {
+  background-color: #14324b;
+  border-color: #14324b;
+  color: #fff;
+}
+.button__solid.button__blue:hover {
+  background: #275981;
+  border-color: #275981;
+}
+
 .form-select.lg__light__blue {
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
@@ -413,6 +436,44 @@ body {
     font-size: 11px;
     line-height: 14px;
     padding: 0 2px;
+  }
+}
+
+.collection__list .collection__item {
+  margin-bottom: 20px;
+}
+.collection__list .collection__item .image__wrapper {
+  position: relative;
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  height: 296px;
+  overflow: hidden;
+}
+.collection__list .collection__item .image__wrapper .title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(45, 46, 78, 0.831372549);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.collection__list .collection__item .image__wrapper .title h5 {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+.collection__list .collection__item .image__wrapper .title i {
+  margin-top: 4px;
+  margin-left: 4px;
+}
+@media (max-width: 768px) {
+  .collection__list .collection__item .image__wrapper {
+    height: 175px;
   }
 }
 
@@ -1672,6 +1733,36 @@ header .bottom__header .navLinks__list li .nav__dropdown:hover .vertical__dropdo
   visibility: visible;
 }
 
+section.new__hero__banner {
+  padding: 20px 0;
+  background-color: white;
+}
+section.new__hero__banner .big__card .image__wrapper {
+  height: 96vh;
+}
+section.new__hero__banner .small__card .image__wrapper {
+  height: 46.5vh;
+}
+section.new__hero__banner .image__wrapper {
+  display: block;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+section.new__hero__banner .image__wrapper button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (max-width: 768px) {
+  section.new__hero__banner .image__wrapper {
+    height: auto !important;
+    width: 100%;
+  }
+}
+
 section {
   overflow: hidden;
 }
@@ -1797,8 +1888,12 @@ section.mainServices__list.bg__white {
   background-color: white;
 }
 
+section.new__collection__list {
+  padding: 40px 0;
+}
+
 section.collection__list {
-  padding: 20px 0 90px 0;
+  padding: 40px 0 90px 0;
   background-color: white;
 }
 section.collection__list .collection__item {

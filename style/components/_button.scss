@@ -61,3 +61,26 @@
   display: inline-block;
   font-family: "Work Sans", sans-serif;
 }
+
+.button__solid {
+  height: 44px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  border-radius: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  &.button__blue {
+    background-color: #14324b;
+    border-color: #14324b;
+    color: #fff;
+    &:hover {
+      background: #275981;
+      border-color: #275981;
+    }
+  }
+}

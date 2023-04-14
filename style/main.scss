@@ -283,7 +283,42 @@ header {
     }
   }
 }
+section {
+  &.new__hero__banner {
+    padding: 20px 0;
+    background-color: white;
+    .big__card {
+      .image__wrapper {
+        height: 96vh;
+      }
+    }
+    .small__card {
+      .image__wrapper {
+        height: 46.5vh;
+      }
+    }
+    .image__wrapper {
+      display: block;
+      border-radius: 12px;
+      position: relative;
+      overflow: hidden;
+      width: 100%;
 
+      button {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    @media (max-width: 768px) {
+      .image__wrapper {
+        height: auto !important;
+        width: 100%;
+      }
+    }
+  }
+}
 section {
   overflow: hidden;
   &.hero__banner {
@@ -416,8 +451,13 @@ section {
   }
 }
 section {
+  &.new__collection__list {
+    padding: 40px 0;
+  }
+}
+section {
   &.collection__list {
-    padding: 20px 0 90px 0;
+    padding: 40px 0 90px 0;
     background-color: white;
     .collection__item {
       display: flex;

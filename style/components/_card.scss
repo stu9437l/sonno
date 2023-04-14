@@ -295,3 +295,45 @@
     }
   }
 }
+.collection__list {
+  .collection__item {
+    margin-bottom: 20px;
+    .image__wrapper {
+      position: relative;
+      width: 100%;
+      display: block;
+      border-radius: 10px;
+      height: 296px;
+      overflow: hidden;
+      .title {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 10px;
+        background-color: #2d2e4ed4;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h5 {
+          font-size: 18px;
+          line-height: 24px;
+          margin-bottom: 0;
+        }
+        i {
+          margin-top: 4px;
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+  @media (max-width:768px) {
+    .collection__item{
+      .image__wrapper{
+        height: 175px;
+      }
+    }
+  }
+}
