@@ -144,15 +144,15 @@ $(document).ready(function () {
     arrows: true,
     dots: false,
     asNavFor: ".thumbnails__products_slider",
-    infinite: true,
+    infinite: false,
   });
   $(".thumbnails__products_slider").slick({
     slidesToShow: 4.5,
-    slidesToScroll: 1,
+    slidesToScroll: 4,
     asNavFor: ".single__product_slider",
     dots: false,
     focusOnSelect: true,
-    variableWidth: true,
+    infinite:false
   });
   $(".thumbnails__products_slider").on(
     "click",
