@@ -8,4 +8,13 @@
   @media (max-width: 768px) {
     font-size: 1.35rem !important;
   }
+  &.bold__text {
+    font-weight: 700;
+    font-family: " Work Sans", sans-serif;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #2b2b2b;
+    margin: 0 0 35px;
+  }
 }

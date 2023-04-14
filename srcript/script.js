@@ -68,9 +68,6 @@ $(".clientsReview__slider").slick({
         arrows: false,
       },
     },
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ],
 });
 
@@ -81,7 +78,8 @@ $(".footerClientReviews__slider").slick({
   speed: 300,
   slidesToShow: 1,
   slidesToScroll: 1,
-  autoPlay:true,
+  autoplay: true,
+  autoplaySpeed: 2000,
   responsive: [
     {
       breakpoint: 568,
@@ -117,4 +115,112 @@ $("#close__mobile__popup").click(function () {
 $(".top__footer .footer__content .title").click(function () {
   $(this).closest(".footer__content").find(".footerLinks__list").slideToggle();
   $(this).find("i").toggleClass("rotate__180");
+});
+
+//category page card color tabs
+const productActiveImage = $(
+  ".category__card__list .cat__product__card a .active__image"
+);
+const activeTab = $(
+  ".category__card__list .cat__product__card .color__tabs li a"
+);
+activeTab.each(function () {
+  $(this).click(function () {
+    const target = $(this).data("image");
+    activeTab.removeClass("active");
+    $(this).addClass("active");
+    $(this)
+      .closest(".cat__product__card")
+      .find(".active__image")
+      .attr("src", target);
+  });
+});
+
+//product page slider
+$(document).ready(function () {
+  $(".single__product_slider").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: false,
+    asNavFor: ".thumbnails__products_slider",
+    infinite: true,
+  });
+  $(".thumbnails__products_slider").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: ".single__product_slider",
+    dots: false,
+    centerMode: false,
+  });
+  $(".thumbnails__products_slider").on(
+    "click",
+    ".slick-slide",
+    function (event) {
+      event.preventDefault();
+      var goToSingleSlide = $(this).data("slick-index");
+
+      $(".single__product_slider").slick("slickGoTo", goToSingleSlide);
+    }
+  );
+});
+
+//assembly list toggle button
+
+$(".assembly__list .add__btn").each(function () {
+  let toggleButton = true;
+  $(this).click(function () {
+    if (toggleButton) {
+      toggleButton = false;
+      $(this).text("Remove");
+    } else {
+      toggleButton = true;
+      $(this).text("Add");
+    }
+  });
+});
+
+//verity content toggle
+let verityToggleButton = $(
+  ".product__verity .verity__list .verity__item .toggleButton"
+);
+verityToggleButton.each(function () {
+  $(this).click(function () {
+    $(this).closest(".verity__item").find(".verity__content").slideToggle();
+  });
+});
+
+//dimension content toggle
+$("#dimension__button").click(function () {
+  $("#dimension__content").slideToggle();
+});
+
+// people also like slider
+$(".people__might__like__product__slider").slick({
+  dots: false,
+  arrows: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 3.5,
+  slidesToScroll: 3,
+  autoPlay: true,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      },
+    },
+    {
+      breakpoint: 568,
+      settings: {
+        slidesToShow: 1.2,
+        slidesToScroll: 1,
+      },
+    },
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ],
 });
