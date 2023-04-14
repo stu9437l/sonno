@@ -621,13 +621,14 @@ body {
 .offcanvas.new__mobile__nav .offcanvas-header .close__btn {
   position: absolute;
   right: 10px;
-  top: 50%;
+  top: 29%;
   transform: translateY(-50%);
   font-size: 35px;
   font-weight: 800;
   color: #1b1b1b;
   text-decoration: none;
   display: inline-block;
+  z-index: 99;
 }
 .offcanvas .offcanvas-body {
   padding: 0;
@@ -657,15 +658,19 @@ body {
   font-size: 12px;
   margin-top: 3px;
 }
-.offcanvas .offcanvas-body .navLinks__list li .vertical__dropdownMenu {
+.offcanvas .offcanvas-body .navLinks__list li .nav__dropdown {
+  overflow: hidden;
+}
+.offcanvas .offcanvas-body .navLinks__list li .nav__dropdown .vertical__dropdownMenu {
   list-style: none;
   position: absolute;
   height: 100vh;
   background-color: white;
   top: 0;
-  width: 100%;
+  width: 0;
   padding: 0;
   margin: 0;
+  overflow: hidden;
 }
 
 #mobile__popup__wrapper {

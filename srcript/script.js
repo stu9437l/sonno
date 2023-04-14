@@ -152,7 +152,7 @@ $(document).ready(function () {
     asNavFor: ".single__product_slider",
     dots: false,
     focusOnSelect: true,
-    infinite:false
+    infinite: false,
   });
   $(".thumbnails__products_slider").on(
     "click",
@@ -220,8 +220,23 @@ $(".people__might__like__product__slider").slick({
         slidesToScroll: 1,
       },
     },
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ],
+});
+
+// mobile submenu click to menu
+$(".back__to__menu").each(function () {
+  $(this).click(function () {
+    console.log("hello");
+    $(this).closest(".vertical__dropdownMenu").animate({
+      width: 0,
+    });
+  });
+});
+
+$(".open__submenu").each(function () {
+  $(this).click(function () {
+    $(this).closest(".nav__dropdown").find(".vertical__dropdownMenu").animate({
+      width: 260,
+    });
+  });
 });
