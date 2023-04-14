@@ -859,11 +859,7 @@ section.product__detail .add__to_backet__fixed__top {
 section.product__detail .product__slider {
   margin-bottom: 50px;
 }
-section.product__detail .product__slider .single__slider {
-  position: relative;
-  margin-bottom: 20px;
-}
-section.product__detail .product__slider .single__slider .people__watch__count {
+section.product__detail .product__slider .people__watch__count {
   display: flex;
   align-items: center;
   position: absolute;
@@ -880,6 +876,11 @@ section.product__detail .product__slider .single__slider .people__watch__count {
   font-weight: 500;
   font-size: 14px;
   color: #fff;
+  z-index: 9;
+}
+section.product__detail .product__slider .single__slider {
+  position: relative;
+  margin-bottom: 20px;
 }
 section.product__detail .product__slider .single__slider img {
   height: 450px;
