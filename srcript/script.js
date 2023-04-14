@@ -147,11 +147,12 @@ $(document).ready(function () {
     infinite: true,
   });
   $(".thumbnails__products_slider").slick({
-    slidesToShow: 3,
+    slidesToShow: 4.5,
     slidesToScroll: 1,
     asNavFor: ".single__product_slider",
     dots: false,
-    centerMode: false,
+    focusOnSelect: true,
+    variableWidth: true,
   });
   $(".thumbnails__products_slider").on(
     "click",

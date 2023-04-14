@@ -601,6 +601,73 @@ body {
   text-decoration: none;
 }
 
+.offcanvas.new__mobile__nav {
+  height: 100vh;
+  width: 260px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.offcanvas.new__mobile__nav .offcanvas-header {
+  padding: 24px;
+  position: relative;
+  text-align: center;
+}
+.offcanvas.new__mobile__nav .offcanvas-header .brand__logo {
+  display: inline-block;
+}
+.offcanvas.new__mobile__nav .offcanvas-header .brand__logo img {
+  width: 100px;
+}
+.offcanvas.new__mobile__nav .offcanvas-header .close__btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 35px;
+  font-weight: 800;
+  color: #1b1b1b;
+  text-decoration: none;
+  display: inline-block;
+}
+.offcanvas .offcanvas-body {
+  padding: 0;
+}
+.offcanvas .offcanvas-body .navLinks__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.offcanvas .offcanvas-body .navLinks__list li {
+  border-bottom: 1px solid #d9d9d9;
+}
+.offcanvas .offcanvas-body .navLinks__list li a {
+  padding: 0 24px;
+  font-weight: 700;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  color: #2c2e4f;
+  font-size: 16px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.offcanvas .offcanvas-body .navLinks__list li a i {
+  font-size: 12px;
+  margin-top: 3px;
+}
+.offcanvas .offcanvas-body .navLinks__list li .vertical__dropdownMenu {
+  list-style: none;
+  position: absolute;
+  height: 100vh;
+  background-color: white;
+  top: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
 #mobile__popup__wrapper {
   display: none;
 }
@@ -850,6 +917,9 @@ section.product__detail .product__slider .single__slider .slick-arrow::before {
 }
 section.product__detail .product__slider .thumbnails__slider {
   justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 section.product__detail .product__slider .thumbnails__slider img {
   cursor: pointer;
@@ -864,10 +934,6 @@ section.product__detail .product__slider .thumbnails__slider img {
 }
 section.product__detail .product__slider .thumbnails__slider img.slick-current {
   opacity: 1;
-}
-section.product__detail .product__slider .thumbnails__slider .slick-track {
-  width: 300px !important;
-  transform: translate3d(0) !important;
 }
 section.product__detail .save__options {
   background: #f3faff;

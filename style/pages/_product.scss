@@ -81,6 +81,9 @@ section {
       }
       .thumbnails__slider {
         justify-content: center;
+        display: flex;
+        align-items: center;
+        text-align: center;
         img {
           cursor: pointer;
           width: 116px !important;
@@ -93,10 +96,7 @@ section {
             opacity: 1;
           }
         }
-        .slick-track {
-          width: 300px !important;
-          transform: translate3d(0) !important;
-        }
+       
       }
     }
     .save__options {
