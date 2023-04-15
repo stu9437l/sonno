@@ -966,6 +966,26 @@ body {
   color: #2b2a2a;
   font-weight: 900;
 }
+.save__item__list.sm__content .save__item .title {
+  font-size: 16px;
+  text-align: left;
+  font-weight: 500;
+  line-height: 24px;
+}
+.save__item__list.sm__content .save__item .content__box {
+  height: 80px;
+  width: 80px;
+}
+.save__item__list.sm__content .save__item .detail__info .select__button.yellow {
+  border: 1px solid #f89201;
+  background: #f89201;
+}
+.save__item__list.sm__content .more__information__modal .description {
+  font-size: 12px;
+}
+.save__item__list.sm__content .more__information__modal .more__features__list .sub__title {
+  font-size: 14px;
+}
 @media (max-width: 768px) {
   .save__item__list .save__item .title {
     font-size: 13px;
@@ -1594,7 +1614,7 @@ section.product__detail .save__options .radio__input input:checked ~ label {
   color: white;
   background: #14324b;
 }
-section.product__detail .save__options .radio__input label {
+section.product__detail .save__options .radio__input button {
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
@@ -1609,13 +1629,17 @@ section.product__detail .save__options .radio__input label {
   background-color: whitesmoke;
   color: #14324b;
 }
-section.product__detail .save__options .radio__input label:hover {
+section.product__detail .save__options .radio__input button:hover {
   background: #275981;
   border-color: #275981;
   color: #fff;
 }
+section.product__detail .save__options .radio__input button.active {
+  color: white;
+  background: #14324b;
+}
 @media (max-width: 768px) {
-  section.product__detail .save__options .radio__input label {
+  section.product__detail .save__options .radio__input button {
     padding: 6px 10px;
     font-size: 18px;
   }

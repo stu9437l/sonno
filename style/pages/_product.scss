@@ -127,7 +127,7 @@ section {
           color: white;
           background: #14324b;
         }
-        label {
+        button {
           font-weight: 500;
           font-size: 20px;
           line-height: 23px;
@@ -145,6 +145,10 @@ section {
             background: #275981;
             border-color: #275981;
             color: #fff;
+          }
+          &.active {
+            color: white;
+            background: #14324b;
           }
 
           @media (max-width: 768px) {

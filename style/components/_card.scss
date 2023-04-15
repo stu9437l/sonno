@@ -372,7 +372,7 @@
           height: 30px;
           width: 30px;
           background: #14324b;
-          border:none;
+          border: none;
           border-radius: 50%;
           color: #fff;
           display: flex;
@@ -575,7 +575,7 @@
     }
   }
   @media (max-width: 768px) {
-    padding:10px 10px 30px 10px;
+    padding: 10px 10px 30px 10px;
     .image__wrapper {
       height: 95px;
     }
@@ -589,14 +589,13 @@
           line-height: 18px;
         }
       }
-      .assembly__buttons{
-        li{
+      .assembly__buttons {
+        li {
           background-color: white;
-          p{
+          p {
             font-size: 12px;
-
           }
-          input{
+          input {
             height: 24px;
             width: 24px;
           }
@@ -620,34 +619,34 @@
           margin: 0 3px;
         }
       }
-      .solid__button{
+      .solid__button {
         font-size: 12px;
         height: 25px;
         padding: 0 10px;
       }
     }
-    .price{
+    .price {
       font-size: 14px;
     }
-    .add__remove__mattress{
-      h4{
-         font-size: 15px;
-         text-align: center;
-         color: #000;
+    .add__remove__mattress {
+      h4 {
+        font-size: 15px;
+        text-align: center;
+        color: #000;
       }
-      .buttons__wrapper{
+      .buttons__wrapper {
         background-color: white;
         padding: 5px;
       }
     }
-    .how__you__save{
+    .how__you__save {
       font-size: 14px;
     }
-    .bottom__footer{
-      a{
+    .bottom__footer {
+      a {
         font-size: 14px;
       }
-      h5{
+      h5 {
         font-size: 14px;
       }
     }
@@ -667,7 +666,6 @@
       margin-bottom: 10px;
       color: #14324a;
       text-transform: none;
-      
     }
     .content__box {
       width: 165px;
@@ -750,40 +748,77 @@
       }
     }
   }
-  @media (max-width:768px) {
-    .save__item{
-      .title{
-        font-size: 13px;
+  &.sm__content {
+    .save__item {
+      .title {
+        font-size: 16px;
         text-align: left;
+        font-weight: 500;
+        line-height: 24px;
       }
-      .content__box{
-        height: 55px;
-        width: 55px;
+      .content__box {
+        height: 80px;
+        width: 80px;
       }
-      .detail__info{
-        .actual__price{
-          font-size: 12px;
-        }
-        .marked__price{
-          font-size: 12px;
-        }
-        .select__button{
-          font-size: 12px;
+      .detail__info {
+        // .actual__price {
+        //   font-size: 12px;
+        // }
+        // .marked__price {
+        //   font-size: 12px;
+        // }
+        .select__button {
+          &.yellow {
+            border: 1px solid #f89201;
+            background: #f89201;
+          }
         }
       }
     }
-    .more__information__modal{
-      .description{
+    .more__information__modal {
+      .description {
         font-size: 12px;
       }
-      .more__features__list{
-        .sub__title{
+      .more__features__list {
+        .sub__title {
           font-size: 14px;
         }
       }
     }
   }
-
+  @media (max-width: 768px) {
+    .save__item {
+      .title {
+        font-size: 13px;
+        text-align: left;
+      }
+      .content__box {
+        height: 55px;
+        width: 55px;
+      }
+      .detail__info {
+        .actual__price {
+          font-size: 12px;
+        }
+        .marked__price {
+          font-size: 12px;
+        }
+        .select__button {
+          font-size: 12px;
+        }
+      }
+    }
+    .more__information__modal {
+      .description {
+        font-size: 12px;
+      }
+      .more__features__list {
+        .sub__title {
+          font-size: 14px;
+        }
+      }
+    }
+  }
 }
 
 .checkout__summary {
@@ -820,18 +855,18 @@
       }
     }
   }
-  @media (max-width:768px) {
-   padding: 10px;
-   .title{
-    font-size: 20px;
-   } 
-   .summary__list{
-    margin: 5px 0;
-    li{
-      .label{
-        font-size: 14px;
+  @media (max-width: 768px) {
+    padding: 10px;
+    .title {
+      font-size: 20px;
+    }
+    .summary__list {
+      margin: 5px 0;
+      li {
+        .label {
+          font-size: 14px;
+        }
       }
     }
-   }
   }
 }

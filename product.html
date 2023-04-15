@@ -30,6 +30,64 @@
 </head>
 
 <body>
+
+  <!-- product more infomation modal -->
+  <div class="modal more__information__modal" id="cart_more__information__modal">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-body  position-relative">
+          <button class="modal__close__button" data-bs-dismiss="modal">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <p class="description">
+            Introducing the cure to all your sleeping woes.
+            The
+            Chelsea
+            Orthopaedic Mattress is designed specifically
+            with
+            customers
+            who suffer from back and joint pain in mind. It
+            spreads your
+            weight evenly and provides firm support to
+            relieve
+            the
+            pressure off those painful hotspots, which means
+            no
+            more tossing
+            and turning. This also helps to maintain the
+            natural
+            alignment of the spine and promotes good blood
+            circulation. With
+            less aches and pains, you’ll finally be able to
+            enjoy a
+            good night’s sleep.
+
+          </p>
+          <h5 class="title">
+            Features
+          </h5>
+          <ul class="more__features__list">
+            <li>
+              <div class="sub__title">
+                Firmness Rating
+              </div>
+              <p class="description">
+                It’s built on a spring system made up of
+                12.5 gauge
+                springs. This increases the durability
+                of
+                the mattress
+                so you can
+                enjoy lasting quality.
+
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- mobile nav -->
   <div class="offcanvas mobile__nav offcanvas-start" tabindex="-1" id="mobile__nav" aria-labelledby="offcanvasLabel">
     <div class="offcanvas-header justify-content-end">
@@ -334,17 +392,61 @@
                 <h4 class="title">
                   Add Mattress and <span class="yellow_text">Save</span>
                 </h4>
-                <div class="d-flex align-items-center justify-content-center">
+                <div class="d-flex align-items-center justify-content-center add__and__save__products">
                   <div class="radio__input w-50">
-                    <input type="radio" name="save__option" class="d-none" id="yes" />
-                    <label for="yes" class=""> Yes </label>
+                    <button class="yes">Yes</button>
+
                   </div>
                   <div class="radio__input w-50">
-                    <input type="radio" name="save__option" class="d-none" id="no" checked />
-                    <label for="no"> no </label>
+                    <button class="active no">No</button>
                   </div>
                 </div>
+
               </div>
+              <ul class="save__item__list sm__content" id="save__item__list">
+                <li>
+                  <div class="save__item">
+                    <div class="d-flex align__items-center justify-content-between">
+                      <div class="me-2">
+                        <h4 class="title">Chelsea orthopaedic mattress</h4>
+                        <div class="d-flex align-items-center">
+                          <div class="content__box p-2">
+                            <div class="discount__offer">
+                              55 % <br> OFF
+                            </div>
+                          </div>
+                          <div class="content__box">
+                            <img class="img__fluid"
+                              src="https://cdn.shopify.com/s/files/1/0539/7695/7109/products/MATTRESSD2.jpg?v=1631729457"
+                              alt="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="detail__info">
+                        <a type="button" class="title" data-bs-toggle="modal"
+                          data-bs-target="#cart_more__information__modal">More
+                          Information</a>
+
+                        <h5 class="">
+                          <span class="actual__price">
+                            SAVE: $345.99
+                          </span>
+                          <span class="marked__price">
+                            was $6573.00
+                          </span>
+                        </h5>
+                        <h5 class="actual__price offer__price">
+                          OFFER PRICE: $656.00
+                        </h5>
+                        <button class="select__button yellow">
+                          select
+                        </button>
+                      </div>
+                    </div>
+
+                  </div>
+                </li>
+              </ul>
               <ul class="assembly__list">
                 <li>
                   <div class="part__info">
@@ -403,12 +505,61 @@
                     </div>
                   </div>
                   <div class="addition__info">
-                    <p class="mb-2">
-                      Or from £19.99 p/m, 0% credit width
-                      <span class="icon__wrapper">
-                        <i class="fa-solid fa-circle-info"></i>
-                      </span>
-                    </p>
+
+                    <div class="more__payment__info justify-content-start mb-2">
+                      <span>£40.62 p/m, 0% credit with</span>
+                      <img src="https://cdn.shopify.com/s/files/1/0198/4944/5438/files/logobanner.svg?v=158349611"
+                        alt="">
+                      <i class="fa-solid fa-circle-info" id="show__more__payment__info"></i>
+                      <div class="more__payment__info__popup__wrapper" id="more__payment__info__popup__wrapper">
+                        <div class="more__payment__info__popup">
+                          <div class="text-end mb-2">
+                            <i class="fa-solid fa-xmark" id="hide__more__payment__info"></i>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-between py-2">
+                            <div class="label">
+                              <strong>2</strong> Payment Of
+                            </div>
+                            <div class="value">
+                              <strong>$2345.00</strong>
+                            </div>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-between py-2">
+                            <div class="label">
+                              <strong>2</strong> Payment Of
+                            </div>
+                            <div class="value">
+                              <strong>$2345.00</strong>
+                            </div>
+                          </div>
+                          <div class="d-flex align-items-center justify-content-between py-2">
+                            <div class="label">
+                              <strong>2</strong> Payment Of
+                            </div>
+                            <div class="value">
+                              <strong>$2345.00</strong>
+                            </div>
+                          </div>
+                          <div
+                            class="d-flex align-items-center justify-content-between py-3 border-top border-bottom border-2 border-dark my-3">
+                            <div class="label">
+                              <strong>2</strong> Payment Of
+                            </div>
+                            <div class="value">
+                              <strong>$2345.00</strong>
+                            </div>
+                          </div>
+                          <div class="text-center">
+                            <img src="https://cdn.shopify.com/s/files/1/0198/4944/5438/files/logobanner.svg?v=158349611"
+                              alt="">
+                          </div>
+                          <div class="text-center sm__description">
+                            0% APR representative example.
+                            Credit subject to status and minimum order value.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     <p class="mb-">
                       <a type="button">
                         <img
