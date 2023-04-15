@@ -1,0 +1,36 @@
+section {
+  &.card__section {
+    background-color: #f5f5f5;
+    overflow: visible !important;
+    .top__heading {
+      padding: 20px 0;
+      text-align: center;
+      .title {
+        font-size: 26px;
+        text-transform: none;
+        line-height: 1.5;
+        color: #25364b;
+        margin: 0 auto 10px;
+        font-weight: $bold;
+      }
+      P {
+        font-weight: 400;
+        font-size: 18px;
+        color: #2b2a2a;
+        .cart__time {
+          color: rgb(230, 0, 0);
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      .top__heading {
+        .title {
+          font-size: 20px;
+        }
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

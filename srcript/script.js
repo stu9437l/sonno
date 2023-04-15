@@ -239,3 +239,46 @@ $(".open__submenu").each(function () {
       .addClass("open");
   });
 });
+
+// add and save products items
+$(".add__and__save__products .yes").click(function () {
+  $(this).addClass("active");
+  $(this)
+    .closest(".add__and__save__products")
+    .find(".no")
+    .removeClass("active");
+  $("#save__item__list").slideDown();
+});
+$(".add__and__save__products .no").click(function () {
+  $(this).addClass("active");
+  $(this)
+    .closest(".add__and__save__products")
+    .find(".yes")
+    .removeClass("active");
+  $("#save__item__list").slideUp();
+});
+
+// more payment options
+
+$("#show__more__payment__info").click(function () {
+  $("#more__payment__info__popup__wrapper").toggle();
+});
+$("#hide__more__payment__info").click(function () {
+  $("#more__payment__info__popup__wrapper").hide();
+});
+$;
+
+// cart value increase and descrease
+
+$(".cart__count .product__plus").click(function (e) {
+  e.preventDefault();
+  const curValue = parseInt($(".cart__count input").val());
+  $(".cart__count input").val(curValue + 1);
+});
+$(".cart__count .product__minus").click(function (e) {
+  e.preventDefault();
+  const curValue = parseInt($(".cart__count input").val());
+  if (curValue > 1) {
+    $(".cart__count input").val(curValue - 1);
+  }
+});
