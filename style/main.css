@@ -1565,12 +1565,6 @@ section.product__detail .product__slider .single__slider .slick-arrow.slick-disa
 section.product__detail .product__slider .single__slider .slick-arrow::before {
   display: none;
 }
-section.product__detail .product__slider .thumbnails__slider {
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
 section.product__detail .product__slider .thumbnails__slider img {
   cursor: pointer;
   width: 116px !important;

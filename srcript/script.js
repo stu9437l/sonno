@@ -147,23 +147,24 @@ $(document).ready(function () {
     infinite: false,
   });
   $(".thumbnails__products_slider").slick({
-    slidesToShow: 4.5,
-    slidesToScroll: 4,
+    slidesToShow: 4,
+    slidesToScroll: 1,
     asNavFor: ".single__product_slider",
     dots: false,
+    centerMode: true,
+    centerPadding: "10px",
     focusOnSelect: true,
-    infinite: false,
   });
-  $(".thumbnails__products_slider").on(
-    "click",
-    ".slick-slide",
-    function (event) {
-      event.preventDefault();
-      var goToSingleSlide = $(this).data("slick-index");
+  // $(".thumbnails__products_slider").on(
+  //   "click",
+  //   ".slick-slide",
+  //   function (event) {
+  //     event.preventDefault();
+  //     var goToSingleSlide = $(this).data("slick-index");
 
-      $(".single__product_slider").slick("slickGoTo", goToSingleSlide);
-    }
-  );
+  //     $(".single__product_slider").slick("slickGoTo", goToSingleSlide);
+  //   }
+  // );
 });
 
 //assembly list toggle button
