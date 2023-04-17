@@ -24,11 +24,12 @@ $regular: 400;
 @import "./components/slider";
 @import "./components/popup";
 
-
 @import "./layout/header";
 @import "./pages/category";
 @import "./pages/product";
 @import "./pages/cart";
+@import "./pages/about";
+@import "./pages/order-swatches";
 
 .bg__light__blue {
   background-color: #f3faff;

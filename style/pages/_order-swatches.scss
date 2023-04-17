@@ -1,0 +1,330 @@
+section {
+  &.order__watches {
+    padding: 40px 0;
+    .order__swatches__inputs {
+      .mob__filter__button {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        h5 {
+          color: #f89201;
+          font-size: 16px;
+          font-weight: $bold;
+        }
+        a {
+          color: #000;
+          font-size: 16px;
+          font-weight: $bold;
+          display: inline-block;
+          text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+          display: flex;
+        }
+      }
+      .swatches__grid__list {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+        @media (max-width: 768px) {
+          gap: 5px;
+        }
+        .swatches__item {
+          position: relative;
+          cursor: pointer;
+          input {
+            display: none;
+            &:checked ~ label::after {
+              display: flex;
+            }
+          }
+          label {
+            cursor: pointer;
+            width: 170px;
+            height: 170px;
+            position: relative;
+            display: block;
+            @media (max-width: 768px) {
+              height: 65px;
+              width: 65px;
+            }
+            &::after {
+              display: none;
+              position: absolute;
+              content: "\f00c";
+              font-family: "Font Awesome 5 Free";
+              font-weight: 900;
+              height: 100%;
+              width: 100%;
+              top: 0;
+              left: 0;
+              align-items: center;
+              justify-content: center;
+              color: white;
+              font-size: 20px;
+            }
+            &::before {
+              content: "";
+              display: block;
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: url(//cdn.shopify.com/s/files/1/0043/7767/3800/t/5/assets/swatch-outline.svg?v=558815769662318313)
+                no-repeat;
+              background-size: cover;
+            }
+          }
+          p {
+            text-align: center;
+            font-size: 15px;
+            margin-top: 4px;
+            text-transform: capitalize;
+            margin-bottom: 0;
+            color: #1b1b1b;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+    }
+    .order__swatches__summary {
+      transition: all 0.5s ease;
+      background: #fff;
+      position: sticky;
+      bottom: 0;
+      margin-top: 40px;
+      .title {
+        font-size: 24px;
+        font-weight: $bold;
+        color: #14324b;
+        margin-bottom: 15px;
+        @media (max-width:768px) {
+          font-size: 18px;
+        }
+      }
+      .swatches__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        display: grid;
+        gap: 5px;
+        grid-template-columns: repeat(10, 1fr);
+
+        .swatches__item {
+          width: 68px;
+          position: relative;
+          cursor: pointer;
+          @media (max-width: 768px) {
+            width: 45px;
+          }
+          input {
+            display: none;
+          }
+          label {
+            cursor: pointer;
+            width: 68px;
+            height: 68px;
+            position: relative;
+            display: block;
+            @media (max-width: 768px) {
+              width: 45px;
+              height: 45px;
+            }
+            &::after {
+              position: absolute;
+              content: "\f00d";
+              font-family: "Font Awesome 5 Free";
+              font-weight: 900;
+              height: 100%;
+              width: 100%;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              color: white;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              height: 30px;
+              width: 30px;
+              background-color: white;
+              color: #be3a4a;
+              border-radius: 50%;
+              @media (max-width: 768px) {
+                width: 25px;
+                height: 25px;
+                font-size: 14px;
+              }
+            }
+            &::before {
+              content: "";
+              display: block;
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: url(//cdn.shopify.com/s/files/1/0043/7767/3800/t/5/assets/swatch-outline.svg?v=558815769662318313)
+                no-repeat;
+              background-size: cover;
+            }
+          }
+          p {
+            text-align: center;
+            font-size: 15px;
+            margin-top: 4px;
+            text-transform: capitalize;
+            margin-bottom: 0;
+            color: #1b1b1b;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+    }
+  }
+}
+.filter__layout__wrapper {
+  .filter__title {
+    padding-bottom: 10px;
+    border-bottom: 0.1rem solid #f3f3f3;
+    display: block;
+    color: #14324b;
+    font-weight: $bold;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  .filer__option__list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    li {
+      &:first-child {
+        margin-top: 15px;
+      }
+      margin-bottom: 12px;
+      input[type="checkbox"] {
+        margin: 0 11px 0 0;
+        width: 15px;
+        height: 15px;
+      }
+      label {
+        font-size: 16px;
+        color: #1b1b1b;
+        text-transform: capitalize;
+      }
+    }
+  }
+  .clear__button {
+    font-size: 16px;
+    color: #14324b;
+    border: 1px solid #14324b;
+    padding: 9px 20px;
+    transition: all 0.15s ease-in-out;
+    background-color: white;
+    border-radius: 4px;
+    &:hover {
+      background-color: #ebebeb;
+    }
+  }
+}
+
+.order_swatches__title__with__number {
+  font-size: 28px;
+  font-weight: $bold;
+  color: #14324b;
+  border-bottom: 1px solid #c4c4c4;
+  margin-bottom: 36px;
+  padding-bottom: 20px;
+  padding-left: 0;
+  @media (max-width:768px) {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+}
+
+.form-control {
+  &.solid__field {
+    background: #ffffff;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    height: 47px;
+    outline: none;
+    box-shadow: none;
+    &:focus ~ label {
+      display: none;
+    }
+  }
+}
+section {
+  &.order__form__section {
+    margin: 40px 0;
+    @media (max-width: 768px) {
+      margin: 20px 0;
+    }
+    .order__form {
+      background: #f3f3f3;
+      padding: 50px;
+      @media (max-width: 768px) {
+        padding: 15px;
+      }
+      label {
+        color: #000;
+        font-size: 14px;
+        text-transform: capitalize;
+        &.overlay {
+          position: absolute;
+          left: 15px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        .atk {
+          color: #f89201;
+        }
+      }
+      .form-check-input {
+        height: 18px;
+        width: 18px;
+        border: 1px solid #f89201;
+        accent-color: #f89201;
+        box-shadow: none;
+        border-radius: 0px;
+        margin-right: 10px;
+        flex-shrink: 0;
+        &:checked {
+          background-color: #f89201;
+        }
+      }
+      .submit__button {
+        color: #fff;
+        font-size: 16px;
+        background: #f89201;
+        border: 1px solid #f89201;
+        border-radius: 4px;
+        text-transform: uppercase;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 30px;
+      }
+    }
+  }
+}
+.modal {
+  &.swatches__order {
+    .modal-body {
+      max-height: 80vh;
+      overflow-y: auto;
+    }
+  }
+}

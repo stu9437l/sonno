@@ -1,0 +1,125 @@
+section {
+  &.about__info {
+    padding: 130px 0;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    .bg__image {
+      height: auto;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    .title {
+      font-size: 40px;
+      color: white;
+      font-weight: $bold;
+      margin-bottom: 25px;
+    }
+    .sub__title {
+      font-size: 18px;
+      color: white;
+      font-weight: $bold;
+      margin-bottom: 10px;
+    }
+    .description {
+      font-size: 18px;
+      color: white;
+      font-weight: $bold;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+      padding: 20px 0;
+      .bg__image {
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 30px;
+      }
+      .title {
+        font-size: 30px;
+        color: #14324b;
+        font-weight: $bold;
+      }
+      .sub__title {
+        color: #2b2a2a;
+      }
+      .description {
+        color: #2b2a2a;
+      }
+    }
+  }
+}
+
+section {
+  &.feature__card__section {
+    padding: 40px 0;
+    .feature__card {
+      background-color: #d2d9df;
+      .feature__image {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        height: auto;
+      }
+      .feature__info {
+        padding: 20px 40px;
+        .feature__title {
+          margin-bottom: 15px;
+          display: block;
+          color: #2b2a2a;
+          font-size: 20px;
+          font-weight: $bold;
+        }
+        .feature__description {
+          color: #2b2a2a;
+          line-height: 1.5;
+          margin-bottom: 20px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+section {
+  &.our__services {
+    padding: 50px 0;
+    .about__service__card {
+      text-align: center;
+      .about__service__card__image {
+        height: 442px;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .about__service__card__title {
+        color: #14324b;
+        font-size: 20px;
+        font-weight: $bold;
+        line-height: 1.5;
+      }
+      .about__service__card__description {
+        font-size: 18px;
+        color: #2b2a2a;
+      }
+    }
+  }
+}
+.top__heading {
+  margin-bottom: 40px;
+  .title {
+    color: #14324b;
+    font-size: 20px;
+    font-weight: $bold;
+    line-height: 1.5;
+  }
+  .description {
+    font-size: 18px;
+    color: #2b2a2a;
+  }
+}
