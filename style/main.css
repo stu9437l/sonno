@@ -1479,6 +1479,11 @@ body {
   font-weight: 900;
 }
 
+.about-upholstered-beds .description {
+  font-size: 18px;
+  color: #14324b;
+}
+
 section.product__detail {
   padding: 50px 0;
 }

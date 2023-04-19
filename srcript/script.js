@@ -283,3 +283,20 @@ $(".cart__count .product__minus").click(function (e) {
     $(".cart__count input").val(curValue - 1);
   }
 });
+
+//order switches summary fixed position
+
+const postionOfSwitchesStart = $(".order__watches").position().top;
+const postionOfSwitchesEnd = $(".order__watches")[0].scrollHeight + postionOfSwitchesStart.top;
+
+console.log(postionOfSwitchesStart, postionOfSwitchesEnd);
+
+$(window).on("scroll", function () {
+  var scrollTop = $(this).scrollTop();
+  // console.log(scrollTop)
+  if (scrollTop > postionOfSwitchesStart && scrollTop < postionOfSwitchesEnd) { 
+    $(".order__swatches__summary").addClass("scrolled");
+  } else {
+    $(".order__swatches__summary").removeClass("scrolled");
+  }
+});
